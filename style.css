@@ -1,0 +1,478 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+}
+.name a {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.name a span {
+  color: #d4143a;
+}
+.container1 {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(71, 200, 225, 0.349);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 130px;
+}
+ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.content ul li a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  position: relative;
+  width: 0;
+  height: 3px;
+  font-weight: bold;
+}
+.content ul li a:hover {
+  color:yellow;
+  font-weight: bold;
+  transition: all 300ms ease-in-out;
+}
+.content ul li a::before {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color:#d4143a;
+  transition: all 500ms ease-in-out;
+  position: absolute;
+  bottom: -6px;
+}
+.content ul li a:hover::before {
+  content: "";
+  width: 50%;
+  height: 3px;
+  position: absolute;
+  bottom: -6px;
+  background-color:#d4143a;
+  transition: all 500ms ease-in-out;
+}
+
+.container2 {
+  background: url("./hero-bg-lg-Photoroom.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+.layer {
+  background-color: rgba(5, 3, 3, 0.475);
+  width: 100%;
+  height: 100%;
+}
+.text {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 200px;
+  padding: 0 130px;
+}
+.text h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+.text button {
+  color: white;
+  background-color: #d4143a;
+  background: transparent;
+  padding: 10px 20px;
+  border: 2px solid #d4143a;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.layer img {
+  position: absolute;
+  width: 35%;
+  top: 110px;
+  right: 130px;
+  object-fit: cover;
+}
+.myname {
+  color: #d4143a;
+}
+.about {
+  margin-bottom: 30px;
+}
+.image {
+  width: 30%;
+  height: 500px;
+  margin-right: 40px;
+  border-radius: 30px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.description {
+  width: 70%;
+  height: 500px;
+  color: white;
+}
+.description h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.description p {
+  font-size: 20px;
+
+  text-align: justify;
+}
+.description a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+}
+.description a::before {
+  content: "";
+  width: 50%;
+  height: 3px;
+  position: absolute;
+  bottom: -6px;
+  background-color: #d4143a;
+
+}
+.p {
+  margin: 20px;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 130px;
+  margin-top: 30px;
+}
+.description a {
+  font-size: 27px;
+  margin: 20px;
+}
+.title {
+  color: #d4143a;
+}
+.detail {
+  margin: 20px;
+}
+
+.service h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container {
+  padding: 0 130px;
+  color: white;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+span {
+  color: #d4143a;
+}
+.service .container .card {
+  width: 480px;
+  height: 450px;
+  background-color: rgb(74, 72, 72);
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+.service .container .card:hover {
+  width: 480px;
+  height: 450px;
+  background-color: #d4143a;
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  padding: 30px 20px;
+  transform: translateY(-15px);
+  transition: 500ms ease-in-out;
+}
+.service i {
+  font-size: 60px;
+  color: white;
+
+  margin-bottom: 20px;
+}
+.service p {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.service .container .card1 {
+  width: 480px;
+  height: 450px;
+  position: relative;
+  background-color: rgb(74, 72, 72);
+}
+
+.card1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 200ms ease-in-out;
+}
+.card1 .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    162deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 0.9809173669467787) 78%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  transition: 800ms ease-in-out;
+  opacity: 0;
+}
+.card1:hover .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    162deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 0.9809173669467787) 78%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 800ms ease-in-out;
+  opacity: 0.9;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 130px;
+  margin-top: 30px;
+}
+.contact .content {
+  width: 40%;
+  height: 350px;
+  color: white;
+}
+.contact .form {
+  width: 60%;
+  height: 350px;
+  color: black;
+}
+input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+.message {
+  width: 100%;
+  height: 120px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-align: start;
+}
+form button {
+  padding: 10px 20px;
+  background-color: #d4143a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+}
+form button:hover {
+  padding: 10px 20px;
+  background-color: #7b0f25;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+}
+.content button {
+  padding: 10px 20px;
+  background: transparent;
+  color: white;
+  border: 1px solid #d4143a;
+  border-radius: 8px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+.contact .content h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.contact .content a {
+  font-size: 20px;
+  margin-bottom: 60px;
+  margin-right: 10px;
+}
+
+.contact .content i {
+  font-size: 20px;
+  margin-right: 15px;
+}
+.footer {
+  background-color: rgb(37, 122, 150);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container1 {
+    padding: 0 50px;
+  }
+  .text {
+    padding: 0 50px;
+    font-size: 30px;
+  }
+  .text h1 {
+    font-size: 50px;
+  }
+  .about {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+  }
+  .image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .description {
+    width: 100%;
+  }
+  .description h1 {
+    font-size: 30px;
+  }
+  .description p {
+    font-size: 18px;
+  }
+  .service .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .service .container .card {
+    width: 100%;
+    height: auto;
+  }
+  .contact {
+    flex-direction: column;
+    padding: 0 50px;
+  }
+  .contact .content,
+  .contact .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .name a {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .content ul li a {
+    font-size: 16px;
+  }
+  .layer img {
+    position: absolute;
+    width: 55%;
+    top: 110px;
+    right: 0;
+    object-fit: cover;
+  }
+  .text {
+    padding: 0 20px;
+    font-size: 18px;
+  }
+  .text h1 {
+    font-size: 40px;
+  }
+  .about {
+    padding: 0 20px;
+  }
+  .image {
+    width: 100%;
+  }
+  .description h1 {
+    font-size: 25px;
+  }
+  .description p {
+    font-size: 16px;
+  }
+  .service h1 {
+    font-size: 30px;
+  }
+
+  .contact {
+    padding: 0 20px;
+  }
+  .contact .content h1 {
+    font-size: 30px;
+  }
+  .footer {
+    font-size: 16px;
+  }
+}
